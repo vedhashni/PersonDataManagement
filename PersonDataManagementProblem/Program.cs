@@ -21,18 +21,22 @@ namespace PersonDataManagementProblem
                     break;
 
                 case 2:
-                    PersonDetails.AddPerson(list);
+                    //PersonDetails.AddPerson(list);
                     PersonDetails.RetrieveTopTwoRecordsLessThan60(list);
                     break;
 
                 case 3:
-                    PersonDetails.AddPerson(list);
+                    //PersonDetails.AddPerson(list);
                     PersonDetails.RetrieveTeenageRecords(list);
                     break;
 
                 case 4:
-                    PersonDetails.AddPerson(list);
+                    //PersonDetails.AddPerson(list);
                     PersonDetails.CalculateAverageAge(list);
+                    break;
+
+                case 5:
+                    PersonDetails.SearchingSpecificName(list, "Ashok");
                     break;
 
                 default:
