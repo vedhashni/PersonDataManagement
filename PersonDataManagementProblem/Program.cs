@@ -11,6 +11,17 @@ namespace PersonDataManagementProblem
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Person Data Management Problem");
-        }
+            List<Person> list = new List<Person>();
+
+            int option = Convert.ToInt32(Console.ReadLine());
+            switch (option)
+            {
+                case 1:
+                    PersonDetails.AddPerson(list);
+                    break;
+
+                default:
+                    break;
+            }
     }
 }
