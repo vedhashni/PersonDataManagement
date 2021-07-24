@@ -93,6 +93,33 @@ namespace PersonDataManagementProblem
             }
         }
 
+        public static bool CalculateAverageAge(List<Person> list)
+        {
+            
+            try
+            {
+                AddPerson(list);
+                if (list.Count > 0)
+                {
+                    double avgAge = list.Average(a => a.age);
+                    Console.WriteLine("Average age value is : {0} ", avgAge);
+                    return true;
+                }
+                else
+                {
+                    Console.WriteLine("No data present in list");
+                    return false;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return false;
+            }
+
+        }
+
         public static void IterateThroughList(List<Person> list)
         {
             foreach (Person person in list)

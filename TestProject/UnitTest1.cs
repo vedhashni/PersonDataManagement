@@ -25,5 +25,14 @@ namespace TestProject
             var actual = PersonDetails.RetrieveTeenageRecords(list);
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void TestMethodForCalculateAverageAge()
+        {
+            ///AAA Method
+            bool expected = true;
+            var actual = PersonDetails.CalculateAverageAge(list);
+            Assert.AreEqual(expected, actual);
+        }
     }
 }

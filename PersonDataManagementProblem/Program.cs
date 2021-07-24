@@ -30,6 +30,11 @@ namespace PersonDataManagementProblem
                     PersonDetails.RetrieveTeenageRecords(list);
                     break;
 
+                case 4:
+                    PersonDetails.AddPerson(list);
+                    PersonDetails.CalculateAverageAge(list);
+                    break;
+
                 default:
                     break;
             }
