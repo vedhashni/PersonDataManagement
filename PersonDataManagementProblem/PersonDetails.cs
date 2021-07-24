@@ -13,7 +13,7 @@ namespace PersonDataManagementProblem
     {
         public static void AddPerson(List<Person> list)
         {
-            Console.WriteLine("\n-----------Adding person details to list----------\n");
+           
             try
             {
                 if (list.Count >= 0)
@@ -35,6 +35,32 @@ namespace PersonDataManagementProblem
             {
                 Console.WriteLine(ex.Message);
             }
+        }
+
+        public static bool RetrieveTopTwoRecordsLessThan60(List<Person> list)
+        {
+            
+            try
+            {
+                if (list.Count >= 0)
+                {
+                    var ageResult1 = list.FindAll(a => a.age < 60).OrderBy(b => b.age).Take(2).ToList();
+                    IterateThroughList(ageResult1);
+                    return true;
+                }
+                else if (list.Count < 0)
+                {
+                    Console.WriteLine("No data present in list");
+                    return false;
+                }
+            }
+
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return false;
+            }
+            return false;
         }
 
         public static void IterateThroughList(List<Person> list)
