@@ -39,6 +39,10 @@ namespace PersonDataManagementProblem
                     PersonDetails.SearchingSpecificName(list, "Ashok");
                     break;
 
+                case 6:
+                    PersonDetails.SkipRecordLessThan60(list);
+                    break;
+
                 default:
                     break;
             }
