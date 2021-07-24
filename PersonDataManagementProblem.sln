@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31410.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonDataManagementProblem", "PersonDataManagementProblem\PersonDataManagementProblem.csproj", "{65B96E7B-2C67-400F-B9A4-1AB1F796D8D3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "TestProject\TestProject.csproj", "{5DE926B2-7101-41D8-A111-875E8821DEA9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{65B96E7B-2C67-400F-B9A4-1AB1F796D8D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65B96E7B-2C67-400F-B9A4-1AB1F796D8D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65B96E7B-2C67-400F-B9A4-1AB1F796D8D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DE926B2-7101-41D8-A111-875E8821DEA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DE926B2-7101-41D8-A111-875E8821DEA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DE926B2-7101-41D8-A111-875E8821DEA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DE926B2-7101-41D8-A111-875E8821DEA9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -25,6 +25,11 @@ namespace PersonDataManagementProblem
                     PersonDetails.RetrieveTopTwoRecordsLessThan60(list);
                     break;
 
+                case 3:
+                    PersonDetails.AddPerson(list);
+                    PersonDetails.RetrieveTeenageRecords(list);
+                    break;
+
                 default:
                     break;
             }

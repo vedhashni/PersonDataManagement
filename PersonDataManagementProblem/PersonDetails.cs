@@ -9,7 +9,7 @@ namespace PersonDataManagementProblem
     /// <summary>
     /// UC1 - Adding Person Details
     /// </summary>
-    class PersonDetails
+    public class PersonDetails
     {
         public static void AddPerson(List<Person> list)
         {
@@ -61,6 +61,36 @@ namespace PersonDataManagementProblem
                 return false;
             }
             return false;
+        }
+
+        public static bool RetrieveTeenageRecords(List<Person> list)
+        {
+            
+            try
+            {
+
+                if (list.Count >= 0)
+                {
+                    var ageResult2 = list.FindAll(a => a.age > 13 && a.age < 18);
+
+                    if (ageResult2.Count != 0)
+                    {
+                        IterateThroughList(ageResult2);
+                        return true;
+                    }
+                    return true;
+                }
+                else
+                {
+                    Console.WriteLine("No data present in list");
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return false;
+            }
         }
 
         public static void IterateThroughList(List<Person> list)
