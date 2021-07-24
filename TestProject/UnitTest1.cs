@@ -52,5 +52,14 @@ namespace TestProject
             var actual = PersonDetails.SkipRecordLessThan60(list);
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void TestMethodForRemoveSpecificName()
+        {
+            ///AAA Method
+            bool expected = true;
+            var actual = PersonDetails.RemoveSpecificName(list, "Radhika");
+            Assert.AreEqual(expected, actual);
+        }
     }
 }

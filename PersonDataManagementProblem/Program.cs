@@ -43,6 +43,10 @@ namespace PersonDataManagementProblem
                     PersonDetails.SkipRecordLessThan60(list);
                     break;
 
+                case 7:
+                    PersonDetails.RemoveSpecificName(list, "Radhika");
+                    break;
+
                 default:
                     break;
             }
